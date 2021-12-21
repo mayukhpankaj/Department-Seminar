@@ -14,6 +14,13 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
+#img-logo {
+  max-height: 60px; 
+  border-radius: 50%;
+   padding: 5px; 
+   margin-top: -10px;
+}
+
 a {
   color: #f82249;
   text-decoration: none;
@@ -141,6 +148,12 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 997;
 }
 
+#banner {
+
+  display: inline;
+  align-content: flex-start;
+}
+
 #header.header-scrolled, #header.header-inner {
   background: rgba(6, 12, 34, 0.98);
   height: 70px;
@@ -148,6 +161,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #header #logo h1 {
   font-size: 36px;
+  display: inline;
   margin: 0;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -171,7 +185,14 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (max-width: 992px) {
   #header #logo img {
-    max-height: 30px;
+    max-height: 20px;
+  }
+}
+
+@media(max-width: 600px){
+
+  #img-logo {
+    display: none;
   }
 }
 
